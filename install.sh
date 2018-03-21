@@ -29,7 +29,7 @@ if [[ ! -d fonts ]]; then
     git clone https://github.com/powerline/fonts.git --depth=1
     powershell.exe -Command \&{"$(cat fonts/install.ps1)"}
     ./fonts/install.sh
-    rm -r ./fonts
+    rm -rf ./fonts
 fi
 
 echo -e "\e[93m>>>\e[0m Linking shortcuts..."
